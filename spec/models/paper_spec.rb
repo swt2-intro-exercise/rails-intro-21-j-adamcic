@@ -7,6 +7,7 @@ RSpec.describe Paper, type: :model do
       expect(alan.title).to eq('COMPUTING MACHINERY AND INTELLIGENCE')
       expect(alan.venue).to eq('Mind 49: 433-460')
       expect(alan.year).to eq(1950)
+      expect(alan.authors).to_not eq(nil)
     end
   end
 end
