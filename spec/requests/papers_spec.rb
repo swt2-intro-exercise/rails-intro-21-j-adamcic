@@ -28,7 +28,7 @@ RSpec.describe "/papers", type: :request do
     {
       title: nil,
       venue: nil,
-      year: 1950
+      year: "hi"
     }
   }
 
