@@ -27,7 +27,7 @@ RSpec.describe "/papers", type: :request do
   let(:invalid_attributes) {
     {
       title: nil,
-      venue: "Mind 49: 433-460",
+      venue: nil,
       year: 1950
     }
   }
