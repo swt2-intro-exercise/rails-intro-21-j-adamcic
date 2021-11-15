@@ -5,7 +5,7 @@ describe "Edit author page", type: :feature do
         alan = FactoryBot.create :author
 
         it "should have text inputs for an author's first name, last name, and homepage" do
-            visit new_author_path
+            visit edit_author_path(alan)
             expect(page).to have_field('author[first_name]')
             expect(page).to have_field('author[last_name]')
             expect(page).to have_field('author[homepage]')
